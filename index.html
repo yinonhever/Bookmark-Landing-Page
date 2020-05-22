@@ -22,37 +22,37 @@
   </head>
   <body>
     <header class="header">
-      <img src="images\logo-bookmark.svg" alt="Bookmark logo" class="logo" />
+      <img src="images/logo-bookmark.svg" alt="Bookmark logo" class="logo" />
       <img
-        src="images\icon-hamburger.svg"
+        src="images/icon-hamburger.svg"
         alt="toggle icon"
         class="header__nav-toggle"
       />
       <nav class="header__navigation">
-        <a href="#" class="header__nav-link">Features</a>
-        <a href="#" class="header__nav-link">Pricing</a>
-        <a href="#" class="header__nav-link">Contact</a>
-        <a href="#" class="btn btn--red btn--wide">Login</a>
+        <a href="#top" class="header__nav-link">Features</a>
+        <a href="#top" class="header__nav-link">Pricing</a>
+        <a href="#top" class="header__nav-link">Contact</a>
+        <a href="#top" class="btn btn--red btn--wide">Login</a>
       </nav>
       <div class="header__social-row">
-        <a href="#" class="header__social-link">
+        <a href="#top" class="header__social-link">
           <svg class="header__social-icon">
-            <use xlink:href="images\icon-facebook.svg#facebook"></use>
+            <use xlink:href="images/icon-facebook.svg#facebook"></use>
           </svg>
         </a>
-        <a href="#" class="header__social-link">
+        <a href="#top" class="header__social-link">
           <svg class="header__social-icon">
-            <use xlink:href="images\icon-twitter.svg#twitter"></use>
+            <use xlink:href="images/icon-twitter.svg#twitter"></use>
           </svg>
         </a>
       </div>
     </header>
 
     <main>
-      <section class="intro">
+      <section class="intro" id="intro">
         <div class="intro__img-container">
           <img
-            src="images\illustration-hero.svg"
+            src="images/illustration-hero.svg"
             alt="hero illustration"
             class="intro__img"
           />
@@ -68,13 +68,13 @@
             free.
           </p>
           <div class="intro__btn-row">
-            <a href="#" class="btn btn--blue">Get it on Chrome</a>
-            <a href="#" class="btn btn--grey">Get it on Firefox</a>
+            <a href="#intro" class="btn btn--blue">Get it on Chrome</a>
+            <a href="#intro" class="btn btn--grey">Get it on Firefox</a>
           </div>
         </div>
       </section>
 
-      <section class="features">
+      <section class="features" id="features">
         <div class="features__intro">
           <h2
             class="heading-secondary features__intro-heading u-margin-bottom-small"
@@ -104,7 +104,7 @@
           <div class="tabs__panel features__panel" id="features-tab-1__panel">
             <div class="features__img-container">
               <img
-                src="images\illustration-features-tab-1.svg"
+                src="images/illustration-features-tab-1.svg"
                 alt="illustration"
                 class="features__img"
               />
@@ -119,13 +119,13 @@
                 drag-and-drop interface gives you complete control over how you
                 manage your favourite sites.
               </p>
-              <a href="#" class="btn btn--blue">More Info</a>
+              <a href="#features" class="btn btn--blue">More Info</a>
             </div>
           </div>
           <div class="tabs__panel features__panel" id="features-tab-2__panel">
             <div class="features__img-container">
               <img
-                src="images\illustration-features-tab-2.svg"
+                src="images/illustration-features-tab-2.svg"
                 alt="illustration"
                 class="features__img"
               />
@@ -139,13 +139,13 @@
                 Our powerful search feature will help you find saved sites in no
                 time at all. No need to trawl through all of your bookmarks.
               </p>
-              <a href="#" class="btn btn--blue">More Info</a>
+              <a href="#features" class="btn btn--blue">More Info</a>
             </div>
           </div>
           <div class="tabs__panel features__panel" id="features-tab-3__panel">
             <div class="features__img-container">
               <img
-                src="images\illustration-features-tab-3.svg"
+                src="images/illustration-features-tab-3.svg"
                 alt="illustration"
                 class="features__img"
               />
@@ -159,13 +159,13 @@
                 Easily share your bookmarks and collections with others. Create
                 a shareable link that you can send at the click of a button.
               </p>
-              <a href="#" class="btn btn--blue">More Info</a>
+              <a href="#features" class="btn btn--blue">More Info</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="cta">
+      <section class="cta" id="cta">
         <div class="cta__intro">
           <h3 class="heading-tertiary u-margin-bottom-small">
             Download the extension
@@ -179,47 +179,47 @@
         <div class="cta__card-row">
           <div class="card card--1">
             <img
-              src="images\logo-chrome.svg"
+              src="images/logo-chrome.svg"
               alt="Chrome logo"
               class="card__icon"
             />
             <h4 class="card__title">Add to Chrome</h4>
             <p class="card__text">Minimum version: 62</p>
             <hr class="card__seperator" />
-            <a href="#" class="btn btn--blue btn--wide"
+            <a href="#cta" class="btn btn--blue btn--wide"
               >Add & Install Extension</a
             >
           </div>
           <div class="card card--2">
             <img
-              src="images\logo-firefox.svg"
+              src="images/logo-firefox.svg"
               alt="Firefox logo"
               class="card__icon"
             />
             <h4 class="card__title">Add to Firefox</h4>
             <p class="card__text">Minimum version: 55</p>
             <hr class="card__seperator" />
-            <a href="#" class="btn btn--blue btn--wide"
+            <a href="#cta" class="btn btn--blue btn--wide"
               >Add & Install Extension</a
             >
           </div>
           <div class="card card--3">
             <img
-              src="images\logo-opera.svg"
+              src="images/logo-opera.svg"
               alt="Opera logo"
               class="card__icon"
             />
             <h4 class="card__title">Add to Opera</h4>
             <p class="card__text">Minimum version: 46</p>
             <hr class="card__seperator" />
-            <a href="#" class="btn btn--blue btn--wide"
+            <a href="#cta" class="btn btn--blue btn--wide"
               >Add & Install Extension</a
             >
           </div>
         </div>
       </section>
 
-      <section class="faq">
+      <section class="faq" id="faq">
         <div class="faq__intro">
           <h3 class="heading-tertiary u-margin-bottom-small">
             Frequently Asked Questions
@@ -292,11 +292,11 @@
         </div>
 
         <div class="u-align-center">
-          <a href="#" class="btn btn--blue">More Info</a>
+          <a href="#faq" class="btn btn--blue">More Info</a>
         </div>
       </section>
 
-      <section class="newsletter">
+      <section class="newsletter" id="newsletter">
         <div class="newsletter__content">
           <p class="newsletter__subtitle">35,000+ already joined</p>
           <h3 class="heading-tertiary newsletter__heading">
@@ -308,6 +308,7 @@
                 type="text"
                 class="newsletter__input"
                 placeholder="Enter your email address"
+                aria-label="Email"
               />
             </div>
             <button class="btn btn--red newsletter__btn" type="submit">
@@ -318,22 +319,22 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <img src="images\logo-bookmark-footer.svg" alt="logo" class="logo" />
+    <footer class="footer" id="footer">
+      <img src="images/logo-bookmark-footer.svg" alt="logo" class="logo" />
       <div class="footer__nav">
-        <a href="#" class="footer__nav-link">Features</a>
-        <a href="#" class="footer__nav-link">Pricing</a>
-        <a href="#" class="footer__nav-link">Contact</a>
+        <a href="#footer" class="footer__nav-link">Features</a>
+        <a href="#footer" class="footer__nav-link">Pricing</a>
+        <a href="#footer" class="footer__nav-link">Contact</a>
       </div>
       <div class="footer__social-row">
         <a href="#" class="footer__social-link">
           <svg class="footer__social-icon">
-            <use xlink:href="images\icon-facebook.svg#facebook"></use>
+            <use xlink:href="images/icon-facebook.svg#facebook"></use>
           </svg>
         </a>
         <a href="#" class="footer__social-link">
           <svg class="footer__social-icon">
-            <use xlink:href="images\icon-twitter.svg#twitter"></use>
+            <use xlink:href="images/icon-twitter.svg#twitter"></use>
           </svg>
         </a>
       </div>
