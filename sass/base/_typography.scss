@@ -1,0 +1,34 @@
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  color: $color-grey;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $color-dark;
+  font-weight: 500;
+}
+
+.heading-primary {
+  font-size: 4rem;
+
+  @include respond(mobile) {
+    font-size: 3.25rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 3rem;
+}
+
+.heading-tertiary {
+  font-size: 2.75rem;
+}
+
+.paragraph {
+  line-height: 1.7;
+}

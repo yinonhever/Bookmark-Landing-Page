@@ -1,0 +1,68 @@
+.footer {
+  background-color: $color-dark;
+  color: #fff;
+  padding: 5rem $padding-side;
+  display: flex;
+  align-items: center;
+
+  @include respond(tablet) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__nav {
+    flex: 1;
+    margin-left: 8rem;
+    display: flex;
+
+    @include respond(tablet) {
+      flex-direction: column;
+      margin: 4.5rem 0 5.5rem;
+    }
+  }
+
+  &__nav-link {
+    &,
+    &:link,
+    &:visited {
+      color: inherit;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.4rem;
+
+      &:hover {
+        color: $color-primary-red;
+      }
+
+      &:not(:last-child) {
+        margin-right: 4.5rem;
+
+        @include respond(tablet) {
+          margin-right: 0;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+  &__social-row {
+    display: flex;
+  }
+
+  &__social-link {
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+
+  &__social-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    fill: #fff;
+
+    &:hover {
+      fill: $color-primary-red;
+    }
+  }
+}

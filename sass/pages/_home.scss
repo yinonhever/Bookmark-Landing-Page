@@ -1,0 +1,234 @@
+///// INTRO SECTION
+.intro {
+  padding: 5rem $padding-side;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  position: relative;
+
+  &__img-container {
+    width: 70vw;
+    position: relative;
+    left: 11%;
+
+    .overlay {
+      animation: slideRight 0.4s ease-in 0.4s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    position: relative;
+    right: 5%;
+    animation: slideLeft 0.5s ease-in;
+    animation-fill-mode: backwards;
+  }
+
+  &__content {
+    width: 65%;
+  }
+
+  @include respond(tablet-land) {
+    &__img-container {
+      width: 60%;
+    }
+
+    &__content {
+      width: 50%;
+    }
+  }
+
+  @include respond(tablet) {
+    flex-direction: column;
+    text-align: center;
+
+    &__content {
+      width: 100%;
+      max-width: 60rem;
+    }
+
+    &__img-container {
+      width: 100vw;
+      left: 0;
+      margin-bottom: 7rem;
+      text-align: center;
+    }
+
+    &__img {
+      max-width: 60rem;
+      right: 0;
+    }
+  }
+
+  &__heading {
+    animation: slideUp 0.5s ease-in;
+    animation-fill-mode: backwards;
+  }
+
+  &__text {
+    margin: 2rem 0 4rem;
+    animation: slideUp 0.5s ease-in 0.3s;
+    animation-fill-mode: backwards;
+  }
+
+  .btn:first-of-type {
+    margin-right: 1.55rem;
+  }
+
+  &__btn-row {
+    animation: slideUp 0.5s ease-in 0.6s;
+    animation-fill-mode: backwards;
+
+    @media all and (max-width: 1075px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .btn:first-of-type {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    @include respond(tablet) {
+      flex-direction: row;
+      justify-content: center;
+
+      .btn:first-of-type {
+        margin-right: 1.55rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include respond(mobile) {
+    .btn {
+      padding-left: 1.75rem !important;
+      padding-right: 1.75rem !important;
+    }
+  }
+}
+
+///// FEATURES SECTION
+.features {
+  padding: 6rem $padding-side 12rem;
+
+  @include respond(tablet) {
+    padding-bottom: 8rem;
+  }
+
+  &__intro {
+    width: 45%;
+    margin: 0 auto 4rem;
+    text-align: center;
+
+    @include respond(tablet-land) {
+      width: 100%;
+      max-width: 50rem;
+    }
+  }
+
+  &__panel.active {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tablet) {
+      flex-direction: column;
+      text-align: center;
+
+      .btn {
+        display: none;
+      }
+    }
+  }
+
+  &__img-container {
+    width: 46%;
+    position: relative;
+
+    @include respond(tablet) {
+      width: 100%;
+      max-width: 50rem;
+      margin-bottom: 10rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__content {
+    width: 44%;
+
+    @include respond(tablet) {
+      width: 100%;
+      max-width: 55rem;
+    }
+  }
+
+  .paragraph {
+    margin-bottom: 4rem;
+  }
+}
+
+///// CTA SECTION
+.cta {
+  padding: 0 0 7rem;
+  text-align: center;
+
+  &__intro {
+    width: 38%;
+    margin: 6rem auto;
+
+    @include respond(tablet-land) {
+      width: 45%;
+    }
+
+    @include respond(tablet-1000) {
+      padding: 0 $padding-side-mobile;
+      margin: 7rem auto 5.5rem;
+      width: 100%;
+      max-width: 60rem;
+    }
+
+    @include respond(tablet) {
+      margin-top: 0;
+    }
+  }
+
+  &__card-row {
+    display: flex;
+    justify-content: center;
+
+    @include respond(tablet-1000) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+///// FAQ SECTION
+
+.faq {
+  padding: 4rem 0 10rem;
+  width: 100%;
+  max-width: 55rem;
+  margin: auto;
+
+  & > *:not(.accordion) {
+    text-align: center;
+  }
+
+  &__intro {
+    margin-bottom: 5rem;
+  }
+
+  .accordion {
+    margin-bottom: 7rem;
+  }
+}
+
+

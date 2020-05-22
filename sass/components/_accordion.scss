@@ -1,0 +1,53 @@
+.accordion {
+  &__row {
+    border-top: 1px solid $color-grey-2;
+
+    &:last-child {
+      border-bottom: 1px solid $color-grey-2;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.75rem;
+    padding-left: 0;
+    cursor: pointer;
+
+    &.active {
+      margin-bottom: 1.75rem;
+    }
+  }
+
+  &__top:hover &__title {
+    color: $color-primary-red;
+
+    @include respond(tablet) {
+      color: $color-dark;
+    }
+  }
+
+  &__icon {
+    color: $color-primary-blue;
+    transition: all .5s;
+  }
+
+  &__top.active &__icon {
+    color: $color-primary-red;
+    transform: rotate(180deg);
+  }
+
+  &__content {
+    display: none;
+    padding-bottom: 1.75rem;
+    line-height: 2;
+    font-size: 1.4rem;
+    color: $color-dark;
+    animation: slideUp .3s ease-in;
+
+    &.active {
+      display: block;
+    }
+  }
+}

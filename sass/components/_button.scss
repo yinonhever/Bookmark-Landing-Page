@@ -1,0 +1,54 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.25rem 2.5rem;
+    box-shadow: $bshadow-1;
+    border-radius: 5px;
+    border: 1.5px solid transparent;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    //for the <button> element
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: transparent !important;
+  }
+
+  &--wide {
+    padding: 1.25rem 4rem !important;
+  }
+
+  &--red {
+    background-color: $color-primary-red;
+
+    &:hover {
+      border-color: $color-primary-red;
+      color: $color-primary-red;
+    }
+  }
+
+  &--blue {
+    background-color: $color-primary-blue;
+
+    &:hover {
+      border-color: $color-primary-blue;
+      color: $color-primary-blue;
+    }
+  }
+
+  &--grey {
+    background-color: $color-grey-2;
+    color: $color-dark !important;
+
+    &:hover {
+      border-color: $color-dark;
+    }
+  }
+}

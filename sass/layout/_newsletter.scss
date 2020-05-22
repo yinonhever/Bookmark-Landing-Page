@@ -1,0 +1,127 @@
+.newsletter {
+  background-color: $color-primary-blue;
+  color: #fff;
+  text-align: center;
+  padding: 8rem 0;
+
+  &__content {
+    width: 100%;
+    max-width: 40rem;
+    margin: auto;
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 3rem;
+  }
+
+  &__heading {
+    color: #fff;
+    margin-bottom: 3rem;
+  }
+
+  &__form {
+    display: flex;
+    position: relative;
+
+    @include respond(mobile) {
+      flex-direction: column;
+    }
+
+    &.error .btn {
+      @include respond(mobile) {
+        margin-top: 1.75rem;
+      }
+    }
+
+    &.success {
+      &::after {
+        content: "Thank you for signing up!";
+        position: absolute;
+        top: calc(100% + 2rem);
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 500;
+        color: $color-grey-2;
+      }
+    }
+  }
+
+  &__input-wrapper {
+    flex: 1;
+    position: relative;
+    margin-right: 1rem;
+
+    @include respond(mobile) {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+      height: 4.75rem;
+    }
+
+    &.error {
+      &::before {
+        content: "Whoops! Make sure it's en email";
+        position: absolute;
+        background-color: $color-primary-red;
+        font-size: 1.2rem;
+        font-style: italic;
+        top: 95%;
+        left: 0;
+        padding: 0.3rem;
+        width: 100%;
+        border-radius: 5px;
+        z-index: 1;
+      }
+
+      &::after {
+        content: url(../images/icon-error.svg);
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+      }
+    }
+  }
+
+  &__input {
+    padding: 0 2rem;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid transparent;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+    &:focus {
+      border: 2px solid $color-dark;
+    }
+
+    &.error {
+      border: 2px solid $color-primary-red;
+    }
+  }
+
+  ::placeholder {
+    font-family: "Rubik", sans-serif;
+  }
+
+  .btn {
+    &:hover {
+      background-color: #fff !important;
+    }
+  }
+
+  &__success-message {
+    display: none;
+
+    &.visible {
+      display: block;
+      margin-top: 2rem;
+      font-weight: 500;
+    }
+  }
+}
